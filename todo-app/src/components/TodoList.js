@@ -8,9 +8,11 @@ const TodoList = ({list, removeItem}) => {
         {
             list.map((todo, entry) => (
                 <div className="todo">
-                    <li key={entry}>{todo}</li>
-                    <button className="delete-button" onClick={() => {removeItem(todo)}}>Del</button>
-                    
+                    <li key={entry}>{todo}
+                    <button className="delete-button" onClick={() => {removeItem(todo)}}>x</button>
+                    </li>
+                    <hr/>
+                    <br></br>
                 </div>
             ))
         }
