@@ -10,7 +10,7 @@ const [todo, setTodo] = useState("")
   const addTodo = () => {
 
     if(todo.length!==0){
-    setTodos([...todos, todo]);
+    setTodos([todo, ...todos]);
     setTodo("");
   
   }}
